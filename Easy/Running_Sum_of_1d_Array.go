@@ -10,13 +10,18 @@ Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
 
 func runningSum(nums []int) []int {
 
-	res := make([]int, len(nums))
+	/*res := make([]int, len(nums))
 	res[0] = nums[0]
 
 	for i := 1; i < len(nums); i++ {
 		res[i] = res[i-1] + nums[i]
 	}
-	return res
+	return res*/
+
+	for i := 1; i < len(nums); i++ {
+		nums[i] += nums[i-1]
+	}
+	return nums
 }
 
 /*func runningSum(nums []int) []int {
