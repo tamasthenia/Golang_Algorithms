@@ -20,10 +20,14 @@ func main() {
 
 	restoreString(s, indices)*/
 
-	nums := []int{1, 2, 3, 4}
+	/*nums := []int{1, 2, 3, 4}
 
-	count := len(nums)
+	count := len(nums)*/
 
-	fmt.Println(count)
+	fmt.Println("Start")
+	defer fmt.Println("This is deferred")
+	fmt.Println("Middle")
+	//panic("Something shit happended")
+	//fmt.Println("End")
 
 }
